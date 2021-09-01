@@ -5,24 +5,175 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".addNotes">
-
-    <View
-        android:id="@+id/header_view"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/header_bg">
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header_bg">
 
-    </View>
-    <TextView
-        android:layout_marginTop="80dp"
+        </View>
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="Add Notes"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
-        android:textSize="25sp"
-        android:textAlignment="center"
-        android:text="Add Notes"
-        android:textStyle="bold"
+        >
 
-        android:gravity="center_horizontal" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="15dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title :"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/etTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark_blue"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Name :"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/etSubName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark_blue"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subject Code :"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/etSubCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark_blue"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Topics :"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/etTopics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark_blue"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Time :"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/etDue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/dark_blue"/>
+            </TableRow>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:gravity="center"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                />
+
+
+        </TableLayout>
+
+
+
+
+    </RelativeLayout>
+
+
 
 </RelativeLayout>
+
