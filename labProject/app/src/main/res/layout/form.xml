@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:text="Grade"
+                    android:textStyle="bold"
+
+                    android:gravity="center_horizontal" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:text="Credits"
+                    android:textStyle="bold"
+
+                    android:gravity="center_horizontal" />
+
+
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Grade 1"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 1"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 2"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 2"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 3"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 3"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 4"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 4"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 5"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 5"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 6"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 6"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 7"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 7"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <EditText
+                    android:id="@+id/gpa8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="grade 8"
+
+                    android:inputType="number"
+                    ></EditText>
+
+                <EditText
+                    android:id="@+id/credit8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="credit 8"
+
+                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+
+
+
+
+
+
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnCount"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_state"
+
+            android:text="Calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
