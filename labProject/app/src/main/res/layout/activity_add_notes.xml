@@ -161,9 +161,20 @@
                 android:layout_height="wrap_content"
                 android:text="Submit"
                 android:gravity="center"
-                android:layout_marginLeft="45dp"
-                android:layout_marginRight="45dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
                 />
+            <Button
+                android:id="@+id/btn_viewNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All Notes"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
+                />
+
 
 
         </TableLayout>
