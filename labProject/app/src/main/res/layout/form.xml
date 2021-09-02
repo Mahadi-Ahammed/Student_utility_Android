@@ -14,6 +14,21 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:hint="Result"
+                android:layout_span="2"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center_horizontal" /></TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
@@ -24,7 +39,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
                     android:textSize="25sp"
                     android:textAlignment="center"
                     android:text="Grade"
@@ -36,7 +50,6 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
                     android:textSize="25sp"
                     android:textAlignment="center"
                     android:text="Credits"
@@ -61,7 +74,6 @@
                     android:ems="10"
                     android:hint="Grade 1"
 
-                    android:inputType="number"
                     ></EditText>
 
                 <EditText
@@ -71,7 +83,6 @@
                     android:ems="10"
                     android:hint="credit 1"
 
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -88,7 +99,7 @@
                     android:ems="10"
                     android:hint="grade 2"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -98,7 +109,6 @@
                     android:ems="10"
                     android:hint="credit 2"
 
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -115,7 +125,7 @@
                     android:ems="10"
                     android:hint="grade 3"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -125,7 +135,6 @@
                     android:ems="10"
                     android:hint="credit 3"
 
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -142,7 +151,7 @@
                     android:ems="10"
                     android:hint="grade 4"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -152,7 +161,6 @@
                     android:ems="10"
                     android:hint="credit 4"
 
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -169,7 +177,7 @@
                     android:ems="10"
                     android:hint="grade 5"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -179,7 +187,6 @@
                     android:ems="10"
                     android:hint="credit 5"
 
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -196,7 +203,7 @@
                     android:ems="10"
                     android:hint="grade 6"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -205,8 +212,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="credit 6"
-
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -223,7 +228,7 @@
                     android:ems="10"
                     android:hint="grade 7"
 
-                    android:inputType="number"
+
                     ></EditText>
 
                 <EditText
@@ -232,8 +237,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="credit 7"
-
-                    android:inputType="number"
                     ></EditText>
 
 
@@ -249,8 +252,6 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:hint="grade 8"
-
-                    android:inputType="number"
                     ></EditText>
 
                 <EditText
@@ -260,7 +261,6 @@
                     android:ems="10"
                     android:hint="credit 8"
 
-                    android:inputType="number"
                     ></EditText>
 
 
