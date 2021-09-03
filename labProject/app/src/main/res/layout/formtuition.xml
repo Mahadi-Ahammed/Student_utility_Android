@@ -8,7 +8,18 @@
         android:gravity="center"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/feeRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Fees"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_span="2"
+            android:background="@color/display_color"
 
+            />
 
 
         <TableLayout
@@ -24,25 +35,17 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="25sp"
-                    android:textAlignment="center"
-                    android:text="Enter Tuition Fee per Credit"
                     android:textStyle="bold"
-
+                    android:text="Enter Tuition Fee per Credit:"
                     android:gravity="center_horizontal" />
 
-                <TextView
-
+                <EditText
+                    android:id="@+id/crFee"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="25sp"
-                    android:textAlignment="center"
-                    android:text="Enter Total Credit"
-                    android:textStyle="bold"
-
-                    android:gravity="center_horizontal" />
+                    android:ems="10"
+                    android:hint="For 182 batch it is 2500"
+                    ></EditText>
 
 
 
@@ -54,47 +57,133 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Total Credit:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
                 <EditText
-                    android:id="@+id/gpa1"
+                    android:id="@+id/creNum"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Grade 1"
+                    android:hint="without retake or thesis/project"
 
-                    android:inputType="number"
                     ></EditText>
 
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Other Credit:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
                 <EditText
-                    android:id="@+id/credit1"
+                    android:id="@+id/creOth"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="credit 1"
+                    android:hint="retake or thesis/project"
 
-                    android:inputType="number"
+                    ></EditText>
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your waiver amount"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/wavTk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="without retake or thesis/project"
+
+                    ></EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration fees:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/regFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint=""
+
+                    ></EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other fees:"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+
+                <EditText
+                    android:id="@+id/othFee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="If any extra fee needed"
+
                     ></EditText>
 
 
             </TableRow>
 
 
-
-
-
-
-
-
-
-
         </TableLayout>
 
         <Button
-            android:id="@+id/btnCount"
+            android:id="@+id/feeCount"
             android:textAllCaps="false"
             android:layout_marginTop="10dp"
             android:textColor="@color/colorWhite"
             android:background="@drawable/btn_state"
-
+            android:shadowColor="@color/dark_blue"
             android:text="Calculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
