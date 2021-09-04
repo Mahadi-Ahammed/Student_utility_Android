@@ -60,6 +60,8 @@
                             app:srcCompat="@drawable/ic_baseline_note"
                             tools:ignore="VectorDrawableCompat" />
 
+
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -94,6 +96,8 @@
                             android:background="@drawable/circle_green"
                             android:padding="10dp"
                             android:src="@drawable/ic_baseline_see_notes" />
+
+
 
                         <TextView
                             android:layout_width="wrap_content"

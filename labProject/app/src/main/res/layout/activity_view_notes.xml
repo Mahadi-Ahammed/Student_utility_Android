@@ -1,103 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewNotes">
-    <View
-        android:id="@+id/header_view"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/header_bg">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    </View>
-
-    <TextView
-        android:layout_marginTop="80dp"
-        android:layout_width="match_parent"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fadd"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorWhite"
-        android:textSize="25dp"
-        android:textAlignment="center"
-        android:text="View Notes"
-        android:textStyle="bold"
-
-        android:gravity="center_horizontal" />
-
-    <LinearLayout
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/mainLayout"
-        android:layout_marginTop="230dp"
-        android:paddingBottom="15dp"
-        android:paddingTop="10dp">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="12dp"
-                android:background="@color/green"
-                >
-
-                <TextView
-                    android:id="@+id/etNum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#000"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/etTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="16dp"
-                    android:text="Title"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#000"
-                    app:layout_constraintStart_toEndOf="@+id/etNum"
-                    app:layout_constraintTop_toTopOf="@+id/etNum" />
-
-                <TextView
-                    android:id="@+id/etSubName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Subject Name"
-                    app:layout_constraintStart_toStartOf="@+id/etTitle"
-                    app:layout_constraintTop_toBottomOf="@+id/etTitle" />
-                <TextView
-                    android:id="@+id/etTopics"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Topics"
-                    app:layout_constraintStart_toStartOf="@+id/etSubName"
-                    app:layout_constraintTop_toBottomOf="@+id/etSubName" />
-                <TextView
-                    android:id="@+id/etDue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Due Time or Date"
-                    app:layout_constraintStart_toStartOf="@+id/etTopics"
-                    app:layout_constraintTop_toBottomOf="@+id/etTopics" />
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        app:srcCompat="@drawable/add" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

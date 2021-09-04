@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".adddata">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/header_bg">
+
+        </View>
+
+        <TextView
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:text="Add Notes"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTitle"
+        android:textSize="20sp"
+        android:hint="Title"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSubName"
+        android:textSize="20sp"
+        android:hint="Subject Name"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSubCode"
+        android:textSize="20sp"
+        android:hint="Subject Code"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTopics"
+        android:textSize="20sp"
+        android:hint="Topics"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDue"
+        android:textSize="20sp"
+        android:hint="Deadline"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_purl"
+        android:textSize="20sp"
+        android:hint="Profile Image URL"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/btn_Add"
+        android:textSize="20sp"
+        android:text="Add Notes"
+        android:layout_marginLeft="140dp"
+        />
+    <Button
+        android:id="@+id/btn_viewNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View All Notes"
+        android:textSize="20sp"
+
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="116dp"
+        />
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
