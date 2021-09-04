@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="For 182 batch it is 2500"
+                    android:text="0.00"
                     ></EditText>
 
 
@@ -71,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="without retake or thesis/project"
+                    android:text="0.0"
 
                     ></EditText>
 
@@ -85,7 +85,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Enter Other Credit:"
+                    android:text="Retake or thesis/project credit:"
                     android:textStyle="bold"
                     android:gravity="center_horizontal" />
 
@@ -95,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="retake or thesis/project"
+                    android:text="0"
 
                     ></EditText>
 
@@ -119,8 +119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="without retake or thesis/project"
-
+                    android:text="0"
                     ></EditText>
             </TableRow>
 
@@ -142,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint=""
+                    android:text="0"
 
                     ></EditText>
 
@@ -157,7 +156,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Other fees:"
+                    android:text="Extra fee:"
                     android:textStyle="bold"
                     android:gravity="center_horizontal" />
 
@@ -167,7 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="If any extra fee needed"
+                    android:text="0"
 
                     ></EditText>
 
