@@ -1,14 +1,14 @@
 package com.example.mainscreen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.math.RoundingMode;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.text.DecimalFormat;
 
 public class cgpaCounter extends AppCompatActivity {
 
@@ -58,11 +58,11 @@ public class cgpaCounter extends AppCompatActivity {
         btncount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String gpalst[]= {"A+","A","A-","B+","B","B-","C+","C","D","F"};
-                double gpanum[]= {4.0,3.75,3.50,3.25,3.0,2.75,2.50,2.25,2.0,0.0};
+                String[] gpalst = {"A+","A","A-","B+","B","B-","C+","C","D","F"};
+                double[] gpanum = {4.0,3.75,3.50,3.25,3.0,2.75,2.50,2.25,2.0,0.0};
 
-                String ingpa[]= {gpa1.getText().toString(),gpa2.getText().toString(),gpa3.getText().toString(),gpa4.getText().toString(),gpa5.getText().toString(),gpa6.getText().toString(),gpa7.getText().toString(),gpa8.getText().toString()};
-                String incre[] = {cre1.getText().toString(),cre2.getText().toString(),cre3.getText().toString(),cre4.getText().toString(),cre5.getText().toString(),cre6.getText().toString(),cre7.getText().toString(),cre8.getText().toString()};
+                String[] ingpa = {gpa1.getText().toString(),gpa2.getText().toString(),gpa3.getText().toString(),gpa4.getText().toString(),gpa5.getText().toString(),gpa6.getText().toString(),gpa7.getText().toString(),gpa8.getText().toString()};
+                String[] incre = {cre1.getText().toString(),cre2.getText().toString(),cre3.getText().toString(),cre4.getText().toString(),cre5.getText().toString(),cre6.getText().toString(),cre7.getText().toString(),cre8.getText().toString()};
                 //calculation
                 double allgpa=0.0, allcr=0.0,gpa=0;
                 for (int x=0;x<=8;x++){
@@ -84,8 +84,8 @@ public class cgpaCounter extends AppCompatActivity {
                     return;
                 }
                 gpa = allgpa / allcr;
-                String viewDis = Double.toString(gpa);
-                fres.setText(viewDis);
+                //String viewDis = Double.toString(gpa);
+                fres.setText(new DecimalFormat("##.###").format(gpa));
             }
         });
 
